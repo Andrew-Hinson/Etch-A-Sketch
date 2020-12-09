@@ -1,0 +1,22 @@
+body{
+    background-color: grey;
+}
+
+
+#container {
+    border: solid white;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-column-gap: 1px;
+}
+.squares {
+    text-align: center;
+    border: 1px solid rgb(204, 43, 70);
+    width: 100%;
+    background-color: rgb(22, 201, 224);
+}
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
